@@ -24,15 +24,16 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
-            ],
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
-            }
+            },
+            "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/styles.css"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,5 +97,10 @@
         }
       }
     }
+    
+  },
+  "cli": {
+    "analytics": "5bc17478-ab85-4b41-a4ca-155607d5d734"
   }
+  
 }

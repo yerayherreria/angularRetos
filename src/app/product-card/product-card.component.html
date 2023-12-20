@@ -1,0 +1,21 @@
+<div class="card" style="width: 10rem;">
+    <img src={{productData.image}} class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{productData.name}}</h5>
+    <p class="card-text">{{productData.description}}</p>
+    <p class="card-text">{{productData.price}}</p>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src={{productData.image}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{productData.name}}</h5>
+      <p class="card-text">Description: {{productData.description}}</p>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Price: {{productData.price}}</p>
+      <p class="card-text" [number]="{{productData.quality}}">Quality: </p>
+      <p class="card-text" [number]="{{productData.quality_price_ratio}}">Quality Price: </p>
+      <p class="card-text" [number]="{{productData.durability}}">Durability: </p>
+    </div>
+  </div>
