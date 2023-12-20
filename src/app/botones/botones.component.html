@@ -1,5 +1,4 @@
-<button *ngFor="let button of buttons; let i = index" (click)="viewImage(i)">{{ button }}</button>
-<div>
-   <!-- <img *ngIf="images[index] != false" [src]="images[index]" alt="Selected Image">-->
+<button *ngFor="let button of buttons; let i = index" (click)="showImage(i)">{{ button }}</button>
 
-</div>
+<img [src]="images[selectedImageIndex]" alt="Selected Image">
+
